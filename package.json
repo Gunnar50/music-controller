@@ -1,0 +1,14 @@
+{
+  "name": "music-controller",
+  "version": "1.0.0",
+  "description": "Music Controller",
+  "scripts": {
+    "src:check:lint": "cd src && ../scripts/check.sh",
+    "src:check:types": "cd src && ../scripts/check_types.sh .",
+    "src:fix": "cd src && ../scripts/fix.sh",
+    "src:serve": "cd src && ../scripts/run_serve.sh",
+    "src:test": "cd src && ../scripts/run_tests.sh",
+    "src:uv:install": "cd src && ../scripts/uv_install.sh",
+    "src:uv:update": "cd src && ../scripts/uv_update.sh"
+  }
+}

@@ -1,0 +1,9 @@
+runtime: python312
+app_engine_apis: true
+
+env_variables:
+  FLASK_SETTINGS_FILENAME: "settings_dev.py"
+
+handlers:
+  - url: /.*
+    script: auto

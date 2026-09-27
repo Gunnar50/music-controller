@@ -1,0 +1,12 @@
+runtime: python312
+app_engine_apis: true
+
+env_variables:
+  FLASK_SETTINGS_FILENAME: "settings.py"
+
+handlers:
+  - url: /.*
+    script: auto
+
+inbound_services:
+  - warmup

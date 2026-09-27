@@ -1,0 +1,17 @@
+# General files
+.gcloudignore
+.gitignore
+/**.pytest_cache/**
+/**/.DS_Store
+/**/.mypy_cache/**
+/**/.pytype/**
+/**/.ruff_cache/**
+/**/.venv/**
+/**/__pycache__/**
+
+# Backend files
+app_*.yaml
+pyproject.toml
+requirements-dev.txt
+settings_dev.py
+uv.lock

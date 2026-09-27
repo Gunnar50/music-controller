@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Check imports/style for a service.
+
+# Set some failure conditions
+set -o errexit   # Fail on any error
+set -o pipefail  # Trace ERR through pipes
+set -o errtrace  # Trace ERR through sub-shell commands
+
+../scripts/uv_run.sh ruff check
+../scripts/uv_run.sh ruff format --check
